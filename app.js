@@ -79,3 +79,42 @@ const personel = {
 };
 console.log(personel.name + " " + personel.surname);
 console.log(personel.calculateAge());
+
+const team = [
+  {
+    name: "Ahmet",
+    surname: "Can",
+    job: "Developer",
+    age: 30,
+  },
+  {
+    name: "Mary",
+    surname: "Bary",
+    job: "tester",
+    age: 22,
+  },
+  {
+    name: "Hazel",
+    surname: "Nut",
+    job: "developer",
+    age: 20,
+  },
+];
+
+console.log(team);
+console.log(team[1]);
+console.log(team[1].name);
+console.log(team[1].age);
+console.log("**********");
+
+team.forEach((p) => console.log(p.job));
+const personelAges = team.map((person) => person.age + 1);
+console.log(personelAges);
+
+console.log("**********");
+
+const teamFullName = team.map((p) => ({
+  fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+  age: p.age + 5,
+}));
+console.log(teamFullName);
