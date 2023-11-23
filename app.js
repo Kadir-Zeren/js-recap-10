@@ -20,3 +20,6 @@ const ageBigThan30Last = ages.findLast((age) => age >= 30);
 console.log(ageBigThan30First, ageBigThan30Last);
 
 console.log(ages.find((age) => age >= 80));
+
+const foundIndex = ages.findIndex((age) => age > 18);
+console.log(foundIndex);
