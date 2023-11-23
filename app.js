@@ -66,3 +66,16 @@ const person1 = new Personel("1234567890", "Ahmet Can", 33, 30000);
 const person2 = new Personel("1234567890", "Mehmet Veli", 23, 10000);
 
 console.log(person1, person2);
+
+const personel = {
+  name: "Ahmet",
+  surname: "Canan",
+  dob: 1990,
+  salary: 30000,
+  drivingLicense: true,
+  calculateAge: function () {
+    return new Date().getFullYear() - this.dob;
+  },
+};
+console.log(personel.name + " " + personel.surname);
+console.log(personel.calculateAge());
