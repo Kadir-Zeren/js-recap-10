@@ -43,7 +43,15 @@ car.class = "E";
 console.log(car);
 
 console.log("ENINE:", car["engine"]);
-const myKey = prompt(
-  "Araba ile ilgili neyi ogrenmek istersiniz: speed,color,engine..."
-);
-alert(car[myKey]);
+// const myKey = prompt(
+//   "Araba ile ilgili neyi ogrenmek istersiniz: speed,color,engine..."
+// );
+// alert(car[myKey]);
+
+const myCar = new Object();
+myCar.brand = "Mercedes";
+myCar.model = "2022";
+myCar.speed = "7";
+console.log(myCar.speed);
+console.log(myCar["model"]);
+console.log(myCar);
